@@ -31,7 +31,7 @@ document.getElementById('verify-btn').onclick = async () => {
 
 http://localhost:3000/verify
     // Replace with your actual backend URL
-    const response = await fetch('https://my-netflix-api.onrender.com', {
+    const response = await fetch('https://netflix-verify.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ otp: code })
