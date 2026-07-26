@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+body { background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+
+/* Netflix Background Texture */
+.netflix-bg {
+    position: fixed;
+     top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bca1-0746f31525c4/62255c2d-2f08-4122-83b5-312999e12015/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg') center/cover;
+    z-index: -1;
+}
+
+.otp-card {
+    background: rgba(0, 0, 0, 0.85); padding: 50px; border-radius: 8px;
+    width: 100%; max-width: 450px; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.logo { width: 140px; margin-bottom: 25px; }
+h1 { font-size: 30px; margin-bottom: 10px; }
+p { color: #a3a3a3; font-size: 15px; margin-bottom: 25px; }
+
+.otp-inputs { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 20px; }
+.otp-inputs input {
+    width: 50px; height: 60px; background: #333; border: none; border-bottom: 3px solid transparent;
+    color: white; font-size: 24px; text-align: center; border-radius: 4px; outline: none; transition: 0.3s;
+}
+
+.otp-inputs input:focus { border-bottom: 3px solid #E50914; background: #444; }
+
+.verify-btn {
+    width: 100%; padding: 14px; background: #E50914; color: white; border: none;
+    font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 10px;
+}
+
+.verify-btn:hover { background: #ff0f1a; }
+.error-text { color: #e87c03; font-size: 14px; min-height: 20px; margin-bottom: 15px; display: none; }
+
+.footer-links { margin-top: 25px; color: #737373; font-size: 14px; }
+.footer-links a { color: #fff; text-decoration: none; margin-left: 5px; }
+.footer-links a:hover { text-decoration: underline; }
