@@ -7,7 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // 1. Connect to MongoDB (Replace <password> and the string with yours)
-const mongoURI = "mongodb+srv://admin:<password>@cluster0.mongodb.net/netflixDB?retryWrites=true&w=majority";
+const mongoURI = process.env.MONGO_URI;
+
 mongoose.connect(mongoURI)
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.log("DB Connection Error:", err));
